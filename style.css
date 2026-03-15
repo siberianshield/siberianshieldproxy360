@@ -89,3 +89,14 @@ footer {
   text-decoration: none;
   border-radius: 5px;
 }
+.confirmation {
+  max-width: 600px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+.confirmation h2 {
+  margin-bottom: 15px;
+}
