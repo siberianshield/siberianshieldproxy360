@@ -1,1 +1,66 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketplace - SiberianShieldProxy360</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="marketplace.html">Marketplace</a></li>
+      <li><a href="payment.html">Payment</a></li>
+    </ul>
+  </nav>
+
+  <!-- Marketplace Header -->
+  <header class="hero">
+    <h1>Proxy Marketplace</h1>
+    <p>Select your country, state, and add proxies to your cart.</p>
+  </header>
+
+  <!-- Countries Grid -->
+  <section class="countries">
+    <div class="country-card">
+      <h2>Australia 🇦🇺</h2>
+      <label for="australia-states">Choose State:</label>
+      <select id="australia-states">
+        <option value="nsw">New South Wales</option>
+        <option value="vic">Victoria</option>
+        <option value="qld">Queensland</option>
+      </select>
+      <button onclick="addToCart('Australia Proxy')">Add to Cart 🛒</button>
+    </div>
+
+    <div class="country-card">
+      <h2>United States 🇺🇸</h2>
+      <label for="us-states">Choose State:</label>
+      <select id="us-states">
+        <option value="ny">New York</option>
+        <option value="ca">California</option>
+        <option value="tx">Texas</option>
+      </select>
+      <button onclick="addToCart('USA Proxy')">Add to Cart 🛒</button>
+    </div>
+
+    <!-- Repeat similar blocks for other countries (UK, Germany, France, Canada, Japan, etc.) -->
+  </section>
+
+  <!-- Cart Section -->
+  <section class="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <a href="payment.html" class="checkout-btn">Proceed to Checkout</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 SiberianShieldProxy360. All rights reserved.</p>
+  </footer>
+</body>
+</html>
